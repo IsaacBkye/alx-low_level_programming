@@ -1,11 +1,12 @@
-/*
- * Print using puts inbuilt fn
+/**
+ * main - Print using puts inbuilt fn
+ * Return: 0
  */
+#include <stdio.h>
 int main(void)
 {
-	/*
-	 * Main function
-	 */
-	puts("Programming is like building a multilingual puzzle\n");
+	char strr[] = "Programming is like building a multilingual puzzle\n";
+
+	puts(strr);
 	return (0);
 }
