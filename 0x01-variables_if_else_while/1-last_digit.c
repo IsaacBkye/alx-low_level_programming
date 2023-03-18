@@ -17,6 +17,16 @@ int main(void)
 	char q[] = "and is 0";
 	char r[] = "and is less than 6 and not 0";
 
-	printf("%c ", "%d ", "is ", "%s\n", m, n, m > 5 ? p : m == 0 ? q : r);
+	printf("Last digit of %d ", "is ", "%d ", n, m);
+	if (m > 5)
+	{
+		printf("%s\n", p);
+	} else if (m == 0)
+	{
+		printf("%s\n", q);
+	} else
+	{
+		printf("%s\n", r);
+	}
 	return (0);
 }
