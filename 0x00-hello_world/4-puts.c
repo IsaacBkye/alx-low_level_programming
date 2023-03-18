@@ -5,10 +5,9 @@
 #include <stdio.h>
 int main(void)
 {
-	char a[] = "\"";
-	char strr[] = "Programming is like building a multilingual puzzle\n";
+	char strr[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(a);
+	
 	puts(strr);
 	return (0);
 }
