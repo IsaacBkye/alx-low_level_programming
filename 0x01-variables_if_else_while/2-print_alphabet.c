@@ -6,9 +6,10 @@
  */
 int main(void)
 {
-	char a = "";
+	char a;
+	int b;
 
-	for (int b = 0, b < 26, b++)
+	for (b = 0, b < 26, b++)
 	{
 		a = (char)b;
 		putchar(a);
