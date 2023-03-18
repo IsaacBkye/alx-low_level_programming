@@ -10,7 +10,7 @@ int main(void)
 	int c;
 	char d;
 
-	for (b = 0; b < 2 b++)
+	for (b = 0; b < 2; b++)
 	{
 		for (c = (int)a; c < (int)a +26 ; c++)
 		{
