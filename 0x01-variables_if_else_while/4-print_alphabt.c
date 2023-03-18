@@ -7,8 +7,9 @@ int main(void)
 {
 	int a = 'a';
 	int b;
+	char c;
 
-	for (b = a, b < b + 26; b++)
+	for (b = a; b < b + 26; b++)
 	{
 		if ((char)b != (q || e))
 		{
