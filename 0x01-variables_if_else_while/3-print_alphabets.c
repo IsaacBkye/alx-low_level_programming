@@ -12,7 +12,7 @@ int main(void)
 
 	for (b = 0; b < 2; b++)
 	{
-		for (c = (int)a; c < (int)a +26 ; c++)
+		for (c = (int)a; c < (int)a + 26; c++)
 		{
 			d = c;
 			putchar(d);
