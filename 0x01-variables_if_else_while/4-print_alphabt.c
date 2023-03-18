@@ -11,7 +11,7 @@ int main(void)
 
 	for (b = a; b < b + 26; b++)
 	{
-		if ((char)b != (q || e))
+		if ((char)b != ('q' || 'e'))
 		{
 			c = (char)b;
 			putchar(c);
