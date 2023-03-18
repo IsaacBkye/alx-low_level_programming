@@ -5,7 +5,7 @@
 #include <stdio.h>
 int main(void)
 {
-	char strr[] = "Programming is like building a multilingual puzzle\n";
+	char strr[] = "\"Programming is like building a multilingual puzzle\n";
 
 	puts(strr);
 	return (0);
