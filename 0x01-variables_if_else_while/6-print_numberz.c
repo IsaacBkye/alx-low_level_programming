@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints numbers in new line
- * Return : Nothing 
+ * Return : Nothing
  */
 int main(void)
 {
