@@ -5,13 +5,12 @@
  */
 int main(void)
 {
-	int a = 'a';
-	int b;
+	int b = 97;
 	char c;
 
-	for (b = a; b < b + 26; b++)
+	while (b < 97 + 26)
 	{
-		if ((char)b != ('q' || 'e'))
+		if ((char)b != 'q' && (char)b != 'e')
 		{
 			c = (char)b;
 			putchar(c);
