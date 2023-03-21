@@ -23,8 +23,11 @@ int main(void)
 					putchar(' ');
 					putchar('0' + c);
 					putchar('0' + d);
-					if (putchar(',');
-					putchar(' ');
+					if ((a != 9) && (b != 8) && (c != 9) && (d != 9))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					d++;
 				}
 				c++;
