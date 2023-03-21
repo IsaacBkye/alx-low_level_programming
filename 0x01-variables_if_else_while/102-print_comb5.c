@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
 
-	while (a < 9)
+	while (a < 10)
 	{
 		while (b < 10)
 		{
@@ -23,7 +23,7 @@ int main(void)
 					putchar(' ');
 					putchar('0' + c);
 					putchar('0' + d);
-					putchar(',');
+					if (putchar(',');
 					putchar(' ');
 					d++;
 				}
