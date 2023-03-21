@@ -15,9 +15,9 @@ int main(void)
 		{
 			while (c < 10)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
+				putchar('0' + a);
+				putchar('0' + b);
+				putchar('0' + c);
 				putchar(',');
 				putchar(' ');
 				c++;

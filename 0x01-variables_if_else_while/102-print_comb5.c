@@ -18,11 +18,11 @@ int main(void)
 			{
 				while (d < 10)
 				{
-					putchar(a);
-					putchar(b);
+					putchar('0' + a);
+					putchar('0' + b);
 					putchar(' ');
-					putchar(c);
-					putchar(d);
+					putchar('0' + c);
+					putchar('0' + d);
 					putchar(',');
 					putchar(' ');
 					d++;
