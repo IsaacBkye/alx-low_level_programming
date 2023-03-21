@@ -10,13 +10,13 @@ int main(void)
 	int c;
 	int d;
 
-	for (a = 0; a < 9; a++)
+	while (a < 9)
 	{
-		for (b = a + 1; b < 10; b++)
+		while (b < 10)
 		{
-			for (c = b + 1; c < 10; c++)
+			while (c < 10)
 			{
-				for (d = c + 1; d < 10; d++)
+				while (d < 10)
 				{
 					putchar(a);
 					putchar(b);
@@ -25,8 +25,16 @@ int main(void)
 					putchar(d);
 					putchar(',');
 					putchar(' ');
+					d++;
+				}
+				c++;
+				d = c + 1;
 			}
+			b++;
+			c = b + 1;
 		}
+		a++;
+		b = a + 1;
 	}
 	putchar('\n');
 	return (0);

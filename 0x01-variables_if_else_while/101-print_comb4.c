@@ -5,23 +5,28 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int a = 0;
+	int b = a + 1;
+	int c = b + 1;
 
-	for (a = 0; a < 9; a++)
+	while (a < 9)
 	{
-		for (b = a + 1; b < 10; b++)
+		while (b < 10)
 		{
-			for (c = b + 1; c < 10; c++)
+			while (c < 10)
 			{
 				putchar(a);
 				putchar(b);
 				putchar(c);
 				putchar(',');
 				putchar(' ');
+				c++;
 			}
+			b++;
+			c = b + 1;
 		}
+		a++;
+		b = a + 1;
 	}
 	putchar('\n');
 	return (0);
