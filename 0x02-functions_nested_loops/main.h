@@ -75,3 +75,10 @@ int _abs(int c)
 	else
 		return (c);
 }
+int print_last_digit(int c)
+{
+	if (c % 10 < 0)
+		return ((c % 10) * -1);
+	else
+		return (c % 10)
+}
