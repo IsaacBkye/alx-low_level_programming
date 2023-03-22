@@ -12,25 +12,25 @@ int _pputchar(char c)
 }
 void print_alphabet(void)
 {
-	int _a;
+	int a;
 
-	for (_a = 97; _a < 97 + 26; _a++)
+	for (a = 97;_a < (97 + 26); a++)
 	{
-		putchar(_a);
+		putchar(a);
 	}
 	putchar('\n');
 	return;
 }
 void print_alphabet_x10(void)
 {
-	int _a;
-	int _b;
+	int a;
+	int b;
 
-	for (_a = 0; _a < 10; _a++)
+	for (a = 0; a < 10; a++)
 	{
-		for (_b = 97; _b < 97 + 26; _b++)
+		for (b = 97; b < (97 + 26); b++)
 		{
-			putchar(_b);
+			putchar(b);
 		}
 		putchar('\n');
 	}
@@ -80,7 +80,7 @@ int print_last_digit(int c)
 	if (c % 10 < 0)
 		return ((c % 10) * -1);
 	else
-		return (c % 10)
+		return (c % 10);
 }
 void jack_bauer(void)
 {
