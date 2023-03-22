@@ -1,10 +1,18 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - Prints _putchar
  * Return: Nothing
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char a[] = "_putchar";
+	int b;
+
+	for (b = 0; b < sizeof(b) / sizeof(char); b++)
+	{
+		_putchar(a[b]);
+	}
+	_putchar('\n');
 	return (0);
 }
