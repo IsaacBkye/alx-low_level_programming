@@ -9,9 +9,10 @@ int main(void)
 	char a[] = "_putchar";
 	unsigned long b;
 
-	for (b = 0; b < (sizeof(a) / sizeof(char)); b++)
+	for (b = 0; b < 7; b++)
 	{
 		putchar(a[b]);
 	}
+	putchar('\n');
 	return (0);
 }
