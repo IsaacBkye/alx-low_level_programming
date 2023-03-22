@@ -11,8 +11,8 @@ int main(void)
 
 	for (b = 0; b < (sizeof(a) / sizeof(char)); b++)
 	{
-		putchar(a[b]);
+		_putchar(a[b]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
