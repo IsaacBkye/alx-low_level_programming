@@ -10,3 +10,14 @@ int _pputchar(char c)
 {
 	return (write(1, &c, 1));
 }
+void print_alphabet(void)
+{
+	int _a;
+
+	for (_a = 97; _a < 97 + 26; _a++)
+	{
+		putchar((char)_a);
+	}
+	putchar('\n');
+	return;
+}
