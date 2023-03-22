@@ -1,11 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - prints alphabets 10x
+ * hearder  k
  * Return: Nothing
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return(0);
+        int a;
+        int b;
+
+        for (a = 0; a < 10; a++)
+        {
+                for (b = 97; b < (97 + 26); b++)
+                {
+                        _putchar(b);
+                }
+                _putchar('\n');
+        }
+        return;
 }

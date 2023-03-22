@@ -4,8 +4,14 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+        int a;
+
+        for (a = 97; a < (97 + 26); a++)
+        {
+                _putchar(a);
+        }
+        _putchar('\n');
+        return;
 }
