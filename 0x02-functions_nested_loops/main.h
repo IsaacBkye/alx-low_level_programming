@@ -14,7 +14,7 @@ void print_alphabet(void)
 {
 	int a;
 
-	for (a = 97;_a < (97 + 26); a++)
+	for (a = 97; a < (97 + 26); a++)
 	{
 		putchar(a);
 	}
