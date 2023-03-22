@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * hearder  k
+ * print_alphabet_x10 - print
  * Return: Nothing
  */
 void print_alphabet_x10(void)
 {
-        int a;
-        int b;
+	int a;
+	int b;
 
-        for (a = 0; a < 10; a++)
-        {
-                for (b = 97; b < (97 + 26); b++)
-                {
-                        _putchar(b);
-                }
-                _putchar('\n');
-        }
-        return;
+	for (a = 0; a < 10; a++)
+	{
+		for (b = 97; b < (97 + 26); b++)
+		{
+			_putchar(b);
+		}
+		_putchar('\n');
+	}
 }

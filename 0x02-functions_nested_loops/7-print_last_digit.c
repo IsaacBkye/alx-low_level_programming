@@ -1,19 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
+ * print_last_digit - check the code
+ * @c:
  *
  * Return: Always 0.
  */
-int main(void)
+int print_last_digit(int c)
 {
-    int r;
+	if (c % 10 < 0)
+	{
+		return ((c % 10) * -1);
+	}
+	return (c % 10);
 
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + r);
-    _putchar('\n');
-    return (0);
 }
