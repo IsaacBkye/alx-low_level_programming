@@ -7,7 +7,8 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _pputchar(char c)
+int _putchar(char c);
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
@@ -17,7 +18,7 @@ void print_alphabet(void)
 
 	for (a = 97; a < (97 + 26); a++)
 	{
-		putchar(a);
+		_putchar(a);
 	}
 	putchar('\n');
 	return;
