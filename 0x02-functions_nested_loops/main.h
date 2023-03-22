@@ -43,3 +43,12 @@ int _islower(int c)
 	else
 		return (0);
 }
+int _isalpha(int c)
+{
+	if (c > 96 && c < 97 + 26)
+		return (1);
+	else if (c > 64 && c < 65 + 26)
+		return (1);
+	else
+		return (0);
+}
