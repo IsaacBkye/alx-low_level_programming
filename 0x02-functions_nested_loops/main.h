@@ -21,3 +21,18 @@ void print_alphabet(void)
 	putchar('\n');
 	return;
 }
+void print_alphabet_x10(void)
+{
+	int _a;
+	int _b;
+
+	for (_a = 0; _a < 10; _a++)
+	{
+		for (_b = 97; _b < 97 + 26; _b++)
+		{
+			putchar((char)_b);
+		}
+		putchar('\n');
+	}
+	return;
+}
