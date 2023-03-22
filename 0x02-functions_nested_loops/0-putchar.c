@@ -7,12 +7,11 @@
 int main(void)
 {
 	char a[] = "_putchar";
-	long unsigned int b;
+	unsigned long b;
 
 	for (b = 0; b < (sizeof(a) / sizeof(char)); b++)
 	{
 		putchar(a[b]);
 	}
-	putchar('\n');
 	return (0);
 }
