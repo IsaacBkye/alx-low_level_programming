@@ -16,9 +16,9 @@ void print_alphabet(void)
 
 	for (a = 97; a < (97 + 26); a++)
 	{
-		_pputchar(a);
+		putchar(a);
 	}
-	_pputchar('\n');
+	putchar('\n');
 	return;
 }
 void print_alphabet_x10(void)
@@ -30,57 +30,70 @@ void print_alphabet_x10(void)
 	{
 		for (b = 97; b < (97 + 26); b++)
 		{
-			_pputchar(b);
+			putchar(b);
 		}
-		_pputchar('\n');
+		putchar('\n');
 	}
 	return;
 }
 int _islower(int c)
 {
 	if (c > 96 && c < 97+26)
+	{
 		return (1);
-	else
+	} else
+	{
 		return (0);
+	}
 }
 int _isalpha(int c)
 {
 	if (c > 96 && c < 97 + 26)
+	{
 		return (1);
-	else if (c > 64 && c < 65 + 26)
+	} else if (c > 64 && c < 65 + 26)
+	{
 		return (1);
-	else
+	} else
+	{
 		return (0);
+	}
 }
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_pputchar('+');
+		putchar('+');
 		return (1);
-	}else if (n < 0)
+	} else if (n < 0)
 	{
-		_pputchar('-');
+		putchar('-');
 		return (-1);
-	}else
+	} else
 	{
-		_pputchar('0');
+		putchar('0');
 		return (0);
 	}
 }
 int _abs(int c)
 {
 	if (c < 0)
+	{
 		return (c * -1);
-	else
+	} else
+	{
 		return (c);
+	}
 }
 int print_last_digit(int c)
 {
 	if (c % 10 < 0)
+	{
 		return ((c % 10) * -1);
-	else
+	} else
+	{
 		return (c % 10);
+	}
 }
 void jack_bauer(void)
 {
@@ -97,12 +110,12 @@ void jack_bauer(void)
 			{
 				for (d = 0; d < 10; d++)
 				{
-					_pputchar('0' + a);
-					_pputchar('0' + b);
-					_pputchar(':');
-					_pputchar('0' + c);
-					_pputchar('0' + d);
-					_pputchar('\n');
+					putchar('0' + a);
+					putchar('0' + b);
+					putchar(':');
+					putchar('0' + c);
+					putchar('0' + d);
+					putchar('\n');
 				}
 			}
 		}
