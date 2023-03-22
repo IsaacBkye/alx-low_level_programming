@@ -16,9 +16,9 @@ void print_alphabet(void)
 
 	for (a = 97; a < (97 + 26); a++)
 	{
-
+		_pputchar(a);
 	}
-	putchar('\n');
+	_pputchar('\n');
 	return;
 }
 void print_alphabet_x10(void)
@@ -30,9 +30,9 @@ void print_alphabet_x10(void)
 	{
 		for (b = 97; b < (97 + 26); b++)
 		{
-			putchar(b);
+			_pputchar(b);
 		}
-		putchar('\n');
+		_pputchar('\n');
 	}
 	return;
 }
@@ -56,15 +56,15 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar('+');
+		_pputchar('+');
 		return (1);
 	}else if (n < 0)
 	{
-		putchar('-');
+		_pputchar('-');
 		return (-1);
 	}else
 	{
-		putchar('0');
+		_pputchar('0');
 		return (0);
 	}
 }
@@ -97,12 +97,12 @@ void jack_bauer(void)
 			{
 				for (d = 0; d < 10; d++)
 				{
-					putchar('0' + a);
-					putchar('0' + b);
-					putchar(':');
-					putchar('0' + c);
-					putchar('0' + d);
-					putchar('\n');
+					_pputchar('0' + a);
+					_pputchar('0' + b);
+					_pputchar(':');
+					_pputchar('0' + c);
+					_pputchar('0' + d);
+					_pputchar('\n');
 				}
 			}
 		}
