@@ -26,7 +26,11 @@ void times_table(void)
 				_putchar(' ');;
 			}
 			if (c < 10)
+			{
+				if (b > 2)
+					_putchar(' ');
 				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
