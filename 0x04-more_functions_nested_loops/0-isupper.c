@@ -1,12 +1,17 @@
 /**
  * isupper - Checks for uppercase
- *
+ * @c: arg
  * Return: 1 or 0
  */
 int _isupper(int c)
 {
-	if (isupper(c));
-		return (1);
-	else
-		return (0);
+	int a;
+
+	for (a = 'A'; a <= 'Z'; a++)
+	{
+		if (a == c)
+			return (1);
+		else
+			return (0);
+	}
 }
