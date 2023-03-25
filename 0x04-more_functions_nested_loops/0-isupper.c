@@ -1,5 +1,5 @@
 /**
- * isupper - Checks for uppercase
+ * _isupper - Checks for uppercase
  * @c: arg
  * Return: 1 or 0
  */
