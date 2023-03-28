@@ -13,9 +13,9 @@ void print_rev(char *s)
 		if (*(s + a) == '\0')
 			break;
 	}
-	for (b = a; b > -1; b--)
+	for (b = a; b > 0; b--)
 	{
 		_putchar(*(s + b));
 	}
-	/*_putchar('\n');*/
+	_putchar('\n');
 }
