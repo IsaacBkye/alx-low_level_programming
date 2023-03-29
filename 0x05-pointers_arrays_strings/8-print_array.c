@@ -11,7 +11,8 @@ void print_array(int *a, int n)
 
 	for (d = 0; d < n; d++)
 	{
-		_putchar(*(s + d * 4));
+		if (d == 4)
+			printf("%d\n", (*(s + d * 4)));
+		printf("%d, ", (*(s + d * 4)));
 	}
-	_putchar('\n');
 }
