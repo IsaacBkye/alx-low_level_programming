@@ -12,6 +12,7 @@ void print_array(int *a, int n)
 	{
 		if (d == 4)
 			printf("%d\n", (*(a + d)));
-		printf("%d, ", (*(a + d)));
+		else
+			printf("%d, ", (*(a + d)));
 	}
 }
