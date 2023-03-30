@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 
 	for (d = 0; d < n; d++)
 	{
-		if (d == 4)
+		if (d == n - 1)
 			printf("%d\n", (*(a + d)));
 		else
 			printf("%d, ", (*(a + d)));
