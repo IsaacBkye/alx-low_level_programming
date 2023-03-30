@@ -6,10 +6,10 @@
 void rev_string(char *s)
 {
 	int i;
-	int a = 0;	
+	int a = 0;
 	char *c = s;
 
-	for (i = 0; i < 1000; i++)
+	for (i = 0; i < 10000; i++)
 	{
 		if (*(s + i) == '\0')
 			break;

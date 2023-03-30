@@ -3,7 +3,7 @@
  * puts_half - Prints in reverse
  * @str: arg
  */
-void puts_half(char *str))
+void puts_half(char *str)
 {
 	int a;
 	int b;
@@ -13,7 +13,7 @@ void puts_half(char *str))
 		if (*(str + a) == '\0')
 			break;
 	}
-	for (b = (a - 1) / 2; b <= a; b++)
+	for (b = (a) / 2; b <= a; b++)
 	{
 		_putchar(*(str + b));
 	}

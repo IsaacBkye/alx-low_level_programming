@@ -3,7 +3,7 @@
  * puts2 - Prints in reverse
  * @str: arg
  */
-void puts2(char *str))
+void puts2(char *str)
 {
 	int a;
 	int b;
