@@ -7,12 +7,11 @@
 void print_array(int *a, int n)
 {
 	int d;
-	int b;
 
 	for (d = 0; d < n; d++)
 	{
 		if (d == 4)
-			printf("%d\n", (*(s + d * 4)));
-		printf("%d, ", (*(s + d * 4)));
+			printf("%d\n", (*(a + d)));
+		printf("%d, ", (*(a + d)));
 	}
 }
