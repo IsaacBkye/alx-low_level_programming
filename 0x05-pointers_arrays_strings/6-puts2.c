@@ -13,7 +13,7 @@ void puts2(char *str)
 		if (*(str + a) == '\0')
 			break;
 	}
-	for (b = 0; b <= a; b++)
+	for (b = 0; b <= a - 1; b++)
 	{
 		_putchar(*(str + b));
 		b++;
