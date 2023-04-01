@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	j = i;
 	for (k = 0; k < 1000000; k++)
 	{
-		if(*(src + k) == '\0')
+		if (*(src + k) == '\0')
 			break;
 	}
 	l = j;
