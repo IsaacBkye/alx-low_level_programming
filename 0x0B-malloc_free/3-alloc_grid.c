@@ -12,7 +12,10 @@ int **alloc_grid(int width, int height)
 	int j;
 
 	if (a == NULL)
+	{
+		free(a);
 		return (NULL);
+	}
 	if (width < 1 || height < 1)
 		return (NULL);
 	for (i = 0; i < width; i++)
