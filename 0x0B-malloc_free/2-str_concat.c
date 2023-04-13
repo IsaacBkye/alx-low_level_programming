@@ -81,7 +81,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 	{
-		*a = "";
+		a = (char *)malloc(sizeof(*s1));
+		a[0] = '\0';
 		return (a);
 	}
 	if (s1 == NULL)
