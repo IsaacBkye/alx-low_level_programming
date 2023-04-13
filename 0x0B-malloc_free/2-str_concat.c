@@ -52,7 +52,7 @@ char *_pCopy(char *p1, char *p2)
 		if (p2[i] == '\0')
 			break;
 	}
-	a = (char *)malloc(k * sizeof(*p2) + j * sizeof(*p1));
+	a = (char *)malloc(k * sizeof(*p2) + j * sizeof(*p1) - 1);
 	if (a == NULL)
 		return (NULL);
 	for (i = 0; i < 100000; i++)
