@@ -59,10 +59,12 @@ char *type1(char *a, char *s1, char *s2, unsigned int n)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
+	int b = strlen(s1);
+	int c = strlen(s2);
 
 	if ((int)strlen(s2) <= (int)n)
 	{
-		a = (char *)malloc(sizeof(char) * strlen(s1) + strlen(s2) * sizeof(char) + 1);
+		a = (char *)malloc(sizeof(char) * a + b * sizeof(char) + 1);
 		a = type(a, s1, s2);
 	} else
 	{
