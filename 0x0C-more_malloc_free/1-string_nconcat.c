@@ -12,7 +12,7 @@ char *type(char *a, char *s1, char *s2)
 	int i;
 	int k;
 
-	for (i = 0; i <= (int)strlen(s1); i++)
+	for (i = 0; i < (int)strlen(s1); i++)
 	{
 		a[i] = s1[i];
 	}
@@ -68,7 +68,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		a = type(a, s1, s2);
 	} else
 	{
-		a = (char *)malloc(sizeof(char) * strlen(s1) + n);
+		a = (char *)malloc(sizeof(char) * b + n + 1);
 		a = type1(a, s1, s2, n);
 	}
 	if (a == NULL)
