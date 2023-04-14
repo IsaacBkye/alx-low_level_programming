@@ -68,7 +68,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		a = type(a, s1, s2);
 	} else
 	{
-		a = (char *)malloc(sizeof(char) * b + n + 1);
+		a = (char *)malloc(sizeof(char) * b + n);
 		a = type1(a, s1, s2, n);
 	}
 	if (a == NULL)
