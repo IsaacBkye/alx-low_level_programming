@@ -21,6 +21,7 @@ char *type(char *a, char *s1, char *s2)
 	{
 		a[i] = s2[i - k];
 	}
+	a[i] = '\0';
 	return (a);
 }
 /**
@@ -45,6 +46,7 @@ char *type1(char *a, char *s1, char *s2, unsigned int n)
 	{
 		a[i] = s2[i - j];
 	}
+	a[i] = '\0';
 	return (a);
 }
 /**
