@@ -8,14 +8,10 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *a = (char *)malloc(nmemb * size);
-	int i;
+	void *a = (void *)malloc(nmemb * size);
 
 	if (nmemb == 0 || size == 0 || a == NULL)
 		return (NULL);
-	for (i = 0; i < (int)nmemb; i++)
-	{
-		*(a + 1) = '0';
-	}
+	memset(a, 0, nmemb);
 	return (a);
 }
