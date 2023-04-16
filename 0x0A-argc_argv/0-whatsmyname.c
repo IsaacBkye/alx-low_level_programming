@@ -4,6 +4,7 @@
  * main - main function
  * @argc: arg
  * @argv: arg1
+ * Return: o
  */
 int main(int argc, char *argv[])
 {
@@ -11,5 +12,5 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
