@@ -5,10 +5,8 @@
  * @argc: arg
  * @argv: arg1
  */
-int main(int argc, char **argv)
+int main(int argc, char **argv__attribute__((unused)))
 {
-	(void)(**argv);
-
 	printf("%d\n", argc);
 	return (0);
 }
