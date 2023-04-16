@@ -5,7 +5,7 @@
  * @argc: arg
  * @argv: arg1
  */
-int main(int argc, char **argv__attribute__((unused)))
+int main(int argc, char **argv __attribute__((unused)))
 {
 	printf("%d\n", argc);
 	return (0);
