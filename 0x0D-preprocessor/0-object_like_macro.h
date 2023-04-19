@@ -2,7 +2,9 @@
 #define OBJECT_LIKE_MACRO_H
 #include <stdlib.h>
 /**
- * Declarations
+ * SIZE - A MACRO
  */
-#define SIZE 1024
-#endif
+
+#define SIZE 1024 /*A macro */
+
+#endif /* OBJECT_LIKE_MACRO_H */
