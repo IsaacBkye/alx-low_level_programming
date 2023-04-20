@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	char *a = "+-*/%";
+	int (*a)(int, int);
 	int b;
 
 	if (argc != 4)
@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (get_op_func(argv[2]) == NULL)
+	a = get_op_func(argv[2]);
+	if (a == NULL)
 	{
 		printf("Error\n");
 		exit(99);
