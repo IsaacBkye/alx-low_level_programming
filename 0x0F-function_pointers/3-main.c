@@ -9,16 +9,13 @@ int main(int argc, char *argv[])
 {
 	char *a = "+-*/%";
 	int b;
-	int c = 0;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	for (b = 0; b < 5; b++)
-		*argv[2] == a[b] ? c = 1 : c;
-	if (c != 1)
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
