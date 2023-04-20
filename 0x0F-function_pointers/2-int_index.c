@@ -11,9 +11,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int *a = array;
 	
 	if (size <= 0)
-		return (-2);
+		return (-1);
 	if (array == NULL || cmp == NULL)
-		return (-3);
+		return (-1);
 	for (a = a; a < array + (unsigned int)size; a++)
 	{
 		if (cmp(*a) != 0)
