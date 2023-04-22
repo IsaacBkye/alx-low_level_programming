@@ -31,9 +31,8 @@ void print_cc(va_list ls)
 {
 	char *u = va_arg(ls, char *);
 	if (u == NULL)
-		printf("(nil)");
-	else
-		printf("%s", u);
+		u = "(nil)";
+	printf("%s", u);
 }
 /**
  * print_all - Prints all
