@@ -5,6 +5,20 @@
 #include <stddef.h>
 #include <stdarg.h>
 /**
+ * struct bb - pointer
+ * @x: arg
+ * @y: arg1
+ */
+typedef struct bb
+{
+	char *x;
+	void (*y)();
+} aa;
+void print_i(va_list ls);
+void print_c(va_list ls);
+void print_f(va_list ls);
+void print_cc(va_list ls);
+/**
  * Declarations
  */
 int _putchar(char c);
