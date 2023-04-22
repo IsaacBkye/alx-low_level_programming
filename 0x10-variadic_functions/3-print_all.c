@@ -30,6 +30,7 @@ void print_f(va_list ls)
 void print_cc(va_list ls)
 {
 	char *u = va_arg(ls, char *);
+
 	if (u == NULL)
 		u = "(nil)";
 	printf("%s", u);
@@ -43,7 +44,7 @@ void print_all(const char * const format, ...)
 	int i;
 	int j;
 	va_list ls;
-	char *sep;	
+	char *sep;
 	aa bbb[] = {
 		{"c", print_c},
 		{"i", print_i},
