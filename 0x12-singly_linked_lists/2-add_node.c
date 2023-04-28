@@ -3,13 +3,13 @@
  * add_node - Adds a nodes
  * @head: Pointer to head
  * @str: String to put in element
- * Return: Address of new element 
+ * Return: Address of new element
  */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *node;
-	
 	unsigned int slen = 0;
+
 	node = *head;
 	*head = malloc(sizeof(list_t));
 	if (*head)
