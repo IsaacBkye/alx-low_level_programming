@@ -7,11 +7,11 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *a = (list_t *)malloc(sizeof(head));
-	list_t *b = (list_t *)malloc(sizeof(head));
+	list_t *a = (list_t *)malloc(sizeof(list_t));
+	list_t *b = (list_t *)malloc(sizeof(list_t));
 	int i = 0;
 
-	if (a == NULL || head == NULL || b == NULL)
+	if (a == NULL || b == NULL)
 		return (NULL);
 	a->str = strdup(str);
 	while(str[i] != '\0')
