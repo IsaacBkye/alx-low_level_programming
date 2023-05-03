@@ -2,13 +2,11 @@
 /**
  * free_listint - Frees a list
  * @head: arg
- * 
  * Return: Nothing
  */
 void free_listint(listint_t *head)
 {
-	unsigned int i, j;
-	listint_t *a;
+	listint_t *a = NULL;
 
 	if (head == NULL)
 	{
@@ -19,25 +17,11 @@ void free_listint(listint_t *head)
 		head = NULL;
 	} else
 	{
-		a = head;
-		while(a != NULL)
+		while (head != NULL)
 		{
-			i++;
-			a = a->next;
-		}
-		j = i;
-		a = head;
-		while (a != NULL)
-		{
-			for (i = j; i > 0; i--)
-				a = a->next;
-			free(a);
-			a = NULL;
-			j--;
 			a = head;
+			head = a->next;
+			free(a);
 		}
-		/*a->next = NULL;*/
-		free(a);
-		a->next = NULL;
 	}
 }
