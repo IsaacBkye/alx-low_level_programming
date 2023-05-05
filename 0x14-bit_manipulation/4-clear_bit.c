@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * clear_bit - Set value of bit to 0
- * @index: arg
+ * @n: arg
+ * @index: arg1
  * Return: 1 if a success or 0 otherwise
  */
 int clear_bit(unsigned long int *n, unsigned int index)
