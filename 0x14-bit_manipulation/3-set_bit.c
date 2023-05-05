@@ -5,9 +5,9 @@
  * @b: arg1
  * Return: Result
  */
-unsigned int expo(unsigned int a, unsigned int b)
+unsigned long int expo(unsigned int a, unsigned int b)
 {
-	unsigned int i, res = 1;
+	unsigned long int i, res = 1;
 
 	for (i = 0; i < b; i++)
 		res = res * a;
