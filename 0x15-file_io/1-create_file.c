@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * create_filee - Creates a file
+ * create_file - Creates a file
  * @filename: arg
  * @text_content: arg1
  * Return: 0 or -1
