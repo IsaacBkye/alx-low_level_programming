@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rerad_textfile - Reads a txt file
+ * read_textfile - Reads a txt file
  * @filename: arg
  * @letters: arg1
  * Return: 0 or -1
