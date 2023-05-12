@@ -1,11 +1,21 @@
 #include "main.h"
 /**
  * errr - Prints to stderr
+ * @i: arg1
+ * @str: arg
  */
-void errr(void)
+void errr(int i, char *str)
 {
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	exit(97);
+	if (i == 1)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	if (i == 2)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str);
+		exit(98);
+	}
 }
 /**
  * main - imitates cp system call
@@ -19,26 +29,17 @@ int main(int argc, char *argv[])
 	char buffer[1024];
 
 	if (argc != 3)
-		errr();
+		errr(1, NULL);
 	fileopen1 = open(argv[1], O_RDONLY);
 	if (fileopen1 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
+		errr(2, argv[1]);
 	fileopen2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0644);
 	if (fileopen2 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
-		exit(98);
-	}
+		errr(2, argv[2]);
 	do {
 		fileread = read(fileopen1, buffer, 1024);
 		if (fileread == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
+			errr(1, argv[1]);
 		filewrite = write(fileopen2, buffer, fileread);
 		if (filewrite == -1)
 		{
