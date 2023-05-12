@@ -11,12 +11,13 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fileopen;
 	int len = 0;
 	int getFlag;
+
 	if (filename == NULL)
 		return (-1);
 	fileopen = open(filename, O_RDWR | O_APPEND);
 	if (fileopen == -1)
 		return (-1);
-	getFlag = fcntl(fileopen, F_GETFL) & O_ACCMODE;		
+	getFlag = fcntl(fileopen, F_GETFL) & O_ACCMODE;
 	if (getFlag == O_RDONLY)
 		return (-1);
 	if (text_content != NULL)
