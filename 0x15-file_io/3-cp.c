@@ -42,14 +42,18 @@ int main(int argc, char *argv[])
 		filewrite = write(fileopen2, buffer, fileread);
 		if (filewrite == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n",
-				       argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	} while (fileread == 1024);
-	if (close(fileopen1) == -1 || close(fileopen2) == -1)
+	if (close(fileopen1) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", -1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileopen1);
+		exit(100);
+	}
+	if (close(fileopen2) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileopen2);
 		exit(100);
 	}
 	return (0);
