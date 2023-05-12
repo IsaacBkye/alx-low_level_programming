@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int fileopen1, fileopen2, fileread, filewrite, len = 0;
+	int fileopen1, fileopen2, fileread, filewrite;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fileopen1 = open(argv[1], O_RDONLY);
-	fileopen2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 644);
+	fileopen2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0644);
 	do
 	{
 		fileread = read(fileopen1, buffer, 1024);
@@ -25,8 +25,6 @@ int main(int argc, char *argv[])
 			dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-		while (buffer[len] != '\0')
-			len++;
 		filewrite = write(fileopen2, buffer, len);
 		if (filewrite == -1)
 		{
