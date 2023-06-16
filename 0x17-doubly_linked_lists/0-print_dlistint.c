@@ -5,12 +5,12 @@
  * @ele: number of nodes.
  * Return: elements value.
  */
-size_t printDlistint1(const dlistint_t *h, size_t eles)
+size_t printDlistint1(const dlistint_t *h, size_t ele)
 {
 	if (h)
 	{
 		printf("%i\n", h->n);
-		elements = printDlistint1(h->next, ele + 1);
+		ele = printDlistint1(h->next, ele + 1);
 	}
 	return (ele);
 }
