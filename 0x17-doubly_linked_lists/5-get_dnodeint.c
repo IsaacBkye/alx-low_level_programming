@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_node_rec - get the nth node of dlistint_t linked list recursively.
+ * getNode1 - get the nth node of dlistint_t linked list recursively.
  * @head: pointer list.
  * @n: nodes acumlated as param.
  * @index: index node to return.
