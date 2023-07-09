@@ -1,3 +1,10 @@
+#include "hash_tables.h"
+/**
+ * hash_djb2 - djb2 algorithm hash fcn
+ * @str: str pointer.
+ *
+ * Return: index of hash_table_t.
+ */
 unsigned long int hash_djb2(const unsigned char *str)
 {
     unsigned long int hash;
